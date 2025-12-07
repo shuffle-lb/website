@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="0; url=exp://u.expo.dev/af034037-b81a-42e2-9b67-d22d1ff19701/branch/7c2cbcbd-4dc4-4528-8912-f48e625200c5">
+  <title>Welcome to Shuffle</title>
+
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --card-bg: #ffffff;
+      --text: #111827;
+      --subtext: #6b7280;
+      --success: #10b981;
+      --radius: 16px;
+      --shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+      --max-width: 420px;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 40px 30px;
+      max-width: var(--max-width);
+      width: 100%;
+      text-align: center;
+      box-shadow: var(--shadow);
+      animation: fadeIn 0.6s ease-out forwards;
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      background: var(--success);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 48px;
+      margin: 0 auto 20px;
+      box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0 0 10px;
+      font-weight: 1200;
+    }
+
+    h3 {
+      margin: 0 0 0;
+    }
+
+    p,
+    ul {
+      font-size: 16px;
+      color: var(--subtext);
+      margin: 0 0 20px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    .store-badges {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 12px;
+      width: auto;
+      margin: 0 auto 20px;
+      align-items: center;
+    }
+
+    .store-badges img {
+      height: 50px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      background: var(--success);
+      color: white;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+
+    .btn:hover {
+      background: #0ca673;
+      transform: translateY(-1px);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Welcome to Shuffle</h1>
+    <h3>Step 1: Download Expo Go</h3>
+    <p><em>Expo Go allows us to pre-launch the Shuffle app in testing mode.</em></p>
+    <div class="store-badges">
+      <a href="https://apps.apple.com/us/app/expo-go/id982107779" target="_blank">
+        <img
+          src="assets/images/app-store-badge.svg"
+          alt="Download on the App Store">
+      </a>
+
+      <a href="https://play.google.com/store/apps/details?id=host.exp.exponent" target="_blank">
+        <img 
+          src="assets/images/google-play-badge.png" 
+          alt="Get it on Google Play">
+      </a>
+    </div>
+
+    <h3>Step 2: Open the Shuffle app</h3>
+    <p><em>This opens the Shuffle app inside of the Expo Go app.</em></p>
+
+    <a class="btn"
+      href="exp://u.expo.dev/af034037-b81a-42e2-9b67-d22d1ff19701/branch/7c2cbcbd-4dc4-4528-8912-f48e625200c5">Open Shuffle App</a>
+
+  </div>
+</body>
+</html>
